@@ -21,6 +21,16 @@
     "gomodUpdateImportPaths"
   ],
   "packageRules": [
+      {
+      "matchPackageNames": [
+        "/.*/"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "External dependencies"
+    },
     {
       "description": "Move all golang updates in an own group. Enable patch updates for golang",
       "matchPackageNames": [
@@ -45,17 +55,6 @@
       ],
       "automerge": true,
       "groupName": "github.com/sapcc"
-    },
-    {
-      "matchPackageNames": [
-        "!/^github\\.com\\/sapcc\\/.*/",
-        "/.*/"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "groupName": "External dependencies"
     },
     {
       "matchDepTypes": [
