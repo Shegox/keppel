@@ -22,11 +22,22 @@
   ],
   "packageRules": [
     {
+      "description": "Move all golang updates in an own group. Enable patch updates for golang"
       "matchPackageNames": [
         "go",
         "golang"
       ],
-      "allowedVersions": "1.24.x"
+      "groupName": "golang",
+      "separateMinorPatch": true
+    },
+    {
+      "description": "Disable major and minor updates for golang"
+      "matchPackageNames": [
+        "go",
+        "golang"
+      ],
+      "matchUpdateTypes": ["minor", "major"],
+      "enabled": false
     },
     {
       "matchPackageNames": [
