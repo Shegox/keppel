@@ -23,10 +23,7 @@
   "packageRules": [
       {
       "matchPackageNames": [
-        "/.*/",
-        "!go",
-        "!golang",
-        "!/^github\\.com\\/sapcc\\/.*/"
+        "/.*/"
       ],
       "matchUpdateTypes": [
         "minor",
@@ -35,10 +32,18 @@
       "groupName": "External dependencies"
     },
     {
+      "matchPackageNames": [
+        "/^github\\.com\\/sapcc\\/.*/"
+      ],
+      "automerge": true,
+      "groupName": "github.com/sapcc"
+    },
+    {
       "description": "Move all golang updates in an own group. Enable patch updates for golang",
       "matchPackageNames": [
         "go",
-        "golang"
+        "golang",
+        "actions/go-versions"
       ],
       "groupName": "golang",
       "separateMinorPatch": true
@@ -47,17 +52,11 @@
       "description": "Disable major and minor updates for golang",
       "matchPackageNames": [
         "go",
-        "golang"
+        "golang",
+        "actions/go-versions"
       ],
       "matchUpdateTypes": ["minor", "major"],
-      "enabled": false
-    },
-    {
-      "matchPackageNames": [
-        "/^github\\.com\\/sapcc\\/.*/"
-      ],
-      "automerge": true,
-      "groupName": "github.com/sapcc"
+      "dependencyDashboardApproval": true
     },
     {
       "matchDepTypes": [
