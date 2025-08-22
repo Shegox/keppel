@@ -21,7 +21,7 @@
     "gomodUpdateImportPaths"
   ],
   "packageRules": [
-      {
+    {
       "matchPackageNames": [
         "/.*/"
       ],
