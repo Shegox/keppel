@@ -22,7 +22,7 @@
   ],
   "packageRules": [
     {
-      "description": "Move all golang updates in an own group. Enable patch updates for golang"
+      "description": "Move all golang updates in an own group. Enable patch updates for golang",
       "matchPackageNames": [
         "go",
         "golang"
@@ -31,7 +31,7 @@
       "separateMinorPatch": true
     },
     {
-      "description": "Disable major and minor updates for golang"
+      "description": "Disable major and minor updates for golang",
       "matchPackageNames": [
         "go",
         "golang"
