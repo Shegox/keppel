@@ -3,29 +3,29 @@ module github.com/sapcc/keppel
 go 1.24
 
 require (
-	github.com/alicebob/miniredis/v2 v2.35.0
-	github.com/containers/image/v5 v5.36.1
+	github.com/alicebob/miniredis/v2 v2.39.0
+	github.com/containers/image/v5 v5.36.2
 	github.com/databus23/goslo.policy v0.0.0-20250326134918-4afc2c56a903
 	github.com/dlmiddlecote/sqlstats v1.0.2
 	github.com/go-gorp/gorp/v3 v3.1.0
 	github.com/go-redis/redis_rate/v10 v10.0.1
-	github.com/gofrs/uuid/v5 v5.3.2
-	github.com/golang-jwt/jwt/v5 v5.3.0
+	github.com/gofrs/uuid/v5 v5.5.1
+	github.com/golang-jwt/jwt/v5 v5.3.1
 	github.com/google/cel-go v0.26.0
-	github.com/gophercloud/gophercloud/v2 v2.8.0
+	github.com/gophercloud/gophercloud/v2 v2.14.0
 	github.com/gorilla/mux v1.8.1
 	github.com/hashicorp/golang-lru/v2 v2.0.7
-	github.com/majewsky/gg v1.3.0
-	github.com/majewsky/schwift/v2 v2.0.0
+	github.com/majewsky/gg v1.15.0
+	github.com/majewsky/schwift/v2 v2.2.1
 	github.com/opencontainers/distribution-spec/specs-go v0.0.0-20250731191745-9d1b92567f2c
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/image-spec v1.1.1
-	github.com/prometheus/client_golang v1.23.0
-	github.com/redis/go-redis/v9 v9.12.0
+	github.com/prometheus/client_golang v1.24.1
+	github.com/redis/go-redis/v9 v9.22.0
 	github.com/rs/cors v1.11.1
 	github.com/sapcc/go-api-declarations v1.17.3
 	github.com/sapcc/go-bits v0.0.0-20250820140623-085431e07de8
-	github.com/spf13/cobra v1.9.1
+	github.com/spf13/cobra v1.10.2
 	github.com/timewasted/go-accept-headers v0.0.0-20130320203746-c78f304b1b09
 	go.uber.org/automaxprocs v1.6.0
 )
